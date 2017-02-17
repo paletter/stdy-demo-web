@@ -3,10 +3,16 @@
   <display-name>stdy-demo-web</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- StartServlet -->
+  <servlet>
+    <servlet-name>StartServlet</servlet-name>
+    <servlet-class>com.demo.web.servlet.StartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StartServlet</servlet-name>
+    <url-pattern>/start.do</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
